@@ -1,50 +1,169 @@
-# Welcome to your Expo app 👋
+# Attendance Manager
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern attendance tracking application built with React Native, Expo, TypeScript, and SQLite.
 
-## Get started
+Designed for students who want a fast, clean, and reliable way to monitor attendance, track attendance history, and stay above their target attendance percentage.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+### Subject Management
 
-   ```bash
-   npx expo start
-   ```
+* Add new subjects
+* Edit subject details
+* Delete subjects
+* Set custom attendance targets
 
-In the output, you'll find options to open the app in a
+### Attendance Tracking
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* Mark attendance as Present or Absent
+* Automatic attendance percentage calculation
+* Daily attendance lock to prevent duplicate entries
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Attendance Insights
 
-## Get a fresh project
+* Attendance percentage for each subject
+* Classes needed to reach target attendance
+* Classes that can be safely missed
 
-When you're ready, run:
+### Attendance History
+
+* Complete attendance log history
+* Edit attendance entries
+* Delete attendance entries
+* Undo last attendance action
+
+### Analytics Dashboard
+
+* Overall attendance overview
+* Best performing subject
+* Weakest subject
+* Subject rankings
+* Needs Attention section
+* Attendance statistics
+
+### Semester Management
+
+* Reset entire semester data
+* Clear subjects and attendance history safely
+
+---
+
+## Screenshots
+
+| Dashboard                       | Subject Details                       |
+| ------------------------------- | ------------------------------------- |
+| ![](screenshots/dashboard.jpeg) | ![](screenshots/subject-details.jpeg) |
+
+| Analytics                        | Settings                       |
+| -------------------------------- | ------------------------------ |
+| ![](screenshots/analytics1.jpeg) | ![](screenshots/settings.jpeg) |
+
+### Additional Analytics Views
+
+![](screenshots/analytics2.jpeg)
+
+![](screenshots/analytics3.jpeg)
+
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React Native
+* Expo SDK 54
+* TypeScript
+
+### Navigation
+
+* React Navigation
+
+### Database
+
+* Expo SQLite
+
+### UI
+
+* Expo Vector Icons
+* Google Fonts (Inter)
+
+---
+
+## Installation
+
+### Clone Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/pratikpradhan-dev/attendance-manager.git
+cd attendance-manager
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Install Dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Start Development Server
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+### Run on Device
 
-Join our community of developers creating universal apps.
+1. Install Expo Go
+2. Scan the QR code
+3. Launch the application
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## Project Structure
+
+```text
+attendance-manager
+│
+├── assets
+├── src
+│   ├── components
+│   ├── database
+│   ├── navigation
+│   ├── screens
+│   ├── types
+│   └── utils
+│
+├── App.tsx
+├── app.json
+├── package.json
+└── README.md
+```
+
+---
+
+## Future Improvements
+
+* Backup & Restore
+* PDF Attendance Reports
+* Cloud Sync
+* Cross-device Synchronization
+* Web Support
+
+---
+
+## Author
+
+**Pratik Pradhan**
+
+GitHub:
+https://github.com/pratikpradhan-dev
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+Feel free to use, modify, and learn from this project.
